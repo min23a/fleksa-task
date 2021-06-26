@@ -13,11 +13,11 @@ const ContactUs = () => {
                 <p>We will get back to you as soon as possible.</p>
                 <form>
                     <div className="d-flex flex-column flex-sm-row">
-                        <div className="m-1 col-lg-5 col-md-8">
+                        <div className="m-1 col-lg-5 col-md-6 col-sm-8">
                             <label className="fw-bold" htmlFor="name">Name</label>
                             <input className="form-control mb-3" type="text" name="name" id="name" />
                         </div>
-                        <div className="m-1 col-lg-5 col-md-8">
+                        <div className="m-1 col-lg-5 col-md-6 col-sm-8">
                             <label className="fw-bold" htmlFor="email">E-mail</label>
                             <input className="form-control mb-3" type="text" name="email" id="email" />
                         </div>
