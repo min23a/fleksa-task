@@ -23,7 +23,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="d-flex flex-column flex-sm-row">
-                        <div className='col-lg-5 col-md-8'>
+                        <div className='col-lg-5 col-md-6 col-sm-8'>
                             <label className="fw-bold" htmlFor="subject">Subject</label>
                             <input className="form-control mb-3" type="text" name="subject" id="subject" />
                             <label className="fw-bold" htmlFor="message">Your Message</label>
