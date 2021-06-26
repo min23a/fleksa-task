@@ -7,9 +7,13 @@ import flag from '../Images/flag.png';
 import ContactUs from './ContactUs';
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF, faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
+  const handleClick = () => {
+    const div = document.getElementById("navbarNav");
+    div.classList.toggle("show")
+  }
   return (
     <div>
       <Head>
@@ -25,7 +29,7 @@ export default function Home() {
             <Link href="/">
               <a><Image src={logo} height={60} width={100} alt="logo"></Image></a>
             </Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" onClick={handleClick}>
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
@@ -72,20 +76,20 @@ export default function Home() {
 
       <footer className={styles.footer + " " + "bg-dark text-white"}>
         <div className="row justify-content-evenly align-items-center">
-          <div className="col-lg-4 col-md-12 d-flex justify-content-center">
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
             <p>Ludwig-Landmann-Straße 326 <br />
               60487 Frankfurt am Main <br />
               nidda2012@web.de <br />
               +49 6927295936</p>
           </div>
-          <div className="col-lg-4 col-md-12 text-center">
+          <div className="col-lg-4 col-md-6 col-sm-12 text-center">
             <p className="d-flex justify-content-center align-items-center">
               Powered by 
               <Image src={flLogo} height={15} width={100} alt="Fleksa-logo"></Image>
             </p>
             <p className="ps-3">©2021 Fleksa</p>
           </div>
-          <div className="col-lg-4 col-md-12 text-center">
+          <div className="col-lg-4 col-md-6 col-sm-12 text-center">
             <div>
               <FontAwesomeIcon className={styles.icon} icon={faInstagram}/>
               <FontAwesomeIcon className={styles.icon} icon={faFacebookSquare}/>
