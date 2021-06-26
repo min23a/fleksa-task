@@ -66,7 +66,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="container mt-5 mb-3">
+      <main className={styles.contactBox}>
         <ContactUs/>
       </main>
 

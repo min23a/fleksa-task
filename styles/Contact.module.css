@@ -1,4 +1,4 @@
-.contactForm {
+.contactFormBox {
     width : 60vw;
 }
 .vertical {
@@ -16,9 +16,12 @@
     align-items: center;
     height: 40px;
 }
+.Map {
+    margin: 30px;
+}
 
 @media only screen and (max-width:576px){
-    .contactForm {
+    .contactFormBox {
         width: 100vw;
         background-color: yellow;
     }
@@ -28,5 +31,8 @@
     }
     .image {
         display : none !important;
+    }
+    .Map {
+        margin: 10px;
     }
 }

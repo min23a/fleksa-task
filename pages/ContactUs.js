@@ -8,10 +8,10 @@ import styles from '../styles/Contact.module.css'
 const ContactUs = () => {
     return (
         <div className="d-flex flex-column-reverse flex-sm-row justify-content-center">
-            <div id="contact-form" className={"m-2 p-2" + " " + styles.contactForm}>
+            <div id="contact-form" className={"p-3" + " " + styles.contactFormBox}>
                 <h1>Write Us</h1>
                 <p>We will get back to you as soon as possible.</p>
-                <form className={styles.contactForm}>
+                <form>
                     <div className="d-flex flex-column flex-sm-row">
                         <div className="m-1 col-lg-5 col-md-8">
                             <label className="fw-bold" htmlFor="name">Name</label>
@@ -29,7 +29,9 @@ const ContactUs = () => {
                             <label className="fw-bold" htmlFor="message">Your Message</label>
                             <textarea className="form-control mb-3" type="text"></textarea>
                         </div>
-                        <Image className={styles.image +" "+ 'col-lg-5 col-md-8 mx-4'} height={300} width={300} src={pic} alt="pic"/>
+                        <div className={styles.image}>
+                            <Image height={300} width={300} src={pic} alt="pic" />
+                        </div>
                     </div>
                     <input type="checkbox" name="check" id="check" />
                     <label htmlFor="check" className="mx-2">Yes, I agree to the terms and conditions and privacy policy</label>
@@ -83,7 +85,7 @@ const ContactUs = () => {
                         <FontAwesomeIcon style={{height : '15px'}} icon={faChevronRight} />
                     </div>
                 </div>
-                <iframe className="m-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.6243718961687!2d8.617810714975041!3d50.13075051823114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd099fe5f30895%3A0x71dd891bc17e5705!2sRestaurant%20Nidda!5e0!3m2!1sen!2sbd!4v1624599755039!5m2!1sen!2sbd"  style={{border : "0"}} loading="lazy"></iframe>
+                <iframe className={styles.Map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.6243718961687!2d8.617810714975041!3d50.13075051823114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd099fe5f30895%3A0x71dd891bc17e5705!2sRestaurant%20Nidda!5e0!3m2!1sen!2sbd!4v1624599755039!5m2!1sen!2sbd"  style={{border : "0"}} loading="lazy"></iframe>
                 <div className={styles.contactBox} id="location">
                     <FontAwesomeIcon style={{ height: '30px' }} icon={faMapMarkerAlt}/>
                     <small className="fw-bold">Ludwig-Landmann-Strasse 326 <br />
